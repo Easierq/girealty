@@ -28,7 +28,7 @@ const AdminPage = async () => {
           <p className="font-semibold text-sm text-slate-500 dark:text-slate-200">
             Click the{" "}
             <span className="text-slate-800 dark:text-slate-300">
-              "Create new Listing"
+              &quot;Create new Listing&quot;
             </span>{" "}
             to add new listing/Click listing to edit it.
           </p>
