@@ -33,7 +33,7 @@ export const CardSlide = ({ img }: { img?: string }) => {
       <Link href={`/listings/1`} className="space-y-1">
         <div className="space-y-1">
           <p className="font-semibold text-[#141718]/90 text-sm line-clamp-1">
-            Latest iphone 1
+            400 18th St NW #233, Atlanta, GA 3033
           </p>
           <p className="font-bold text-[#141718] text-sm line-clamp-1">
             {formatPrice(40000)}

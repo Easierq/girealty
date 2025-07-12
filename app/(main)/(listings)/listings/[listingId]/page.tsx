@@ -20,7 +20,7 @@ const DetailsPage = ({ params: { propertyId } }: Props) => {
         <div className="pt-20 md:pt-24 pb-16">
           <div className="space-y-6">
             <h1 className="text-xl font-normal my-4 mb-5">
-              Langling - Duolingo inspired sass language learning app clone
+              400 18th St NW #233, Atlanta, GA 3033
             </h1>
             <div className="relative w-full h-[300px] md:h-auto overflow-hidden bg-slate-400 min-h-[300px] md:min-h-[380px]">
               <ImagesSlider />
@@ -59,8 +59,7 @@ const DetailsPage = ({ params: { propertyId } }: Props) => {
 
                   <p className="text-xl text-slate-600 font-semibold">Condos</p>
                   <h1 className="text-xl font-semibold my-4 mb-5">
-                    Langling - Duolingo inspired sass language learning app
-                    clone
+                    Spacious Three-Bedroom Bungalow in Maryland
                   </h1>
                   <FullTab />
                   <div className="mt-5">
