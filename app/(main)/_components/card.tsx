@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import { Bath, Bed, Map } from "lucide-react";
 import Link from "next/link";
 
-export const CardSlide = ({ img }: { img: string }) => {
+export const CardSlide = ({ img }: { img?: string }) => {
   return (
     <div className="grid grid-cols-1 gap-2">
       {/* thumbnail */}
