@@ -36,11 +36,11 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
 
   return (
     <div className="">
-      <div className="mb-4 flex items-center gap-4">
+      <div className="flex items-center gap-4">
         {value.map((url) => (
           <div
             key={url}
-            className="relative w-[200px] h-[200px] rounded-md overflow-hidden"
+            className="relative w-[200px] h-[200px] rounded-[12px] overflow-hidden"
           >
             <div className="z-10 absolute top-2 right-2">
               <Button
@@ -64,11 +64,12 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
             <Button
               type="button"
               disabled={disabled}
-              variant="secondary"
+              variant="default"
+              className="bg-slate-100 hover:bg-slate-100/70 w-[200px] h-[200px] rounded-[12px] flex items-center justify-center"
               onClick={onClick}
             >
-              <ImagePlus className="h-4 w-4 mr-2" />
-              Upload an Image
+              <ImagePlus className="h-10 w-10 text-slate-400" />
+              {/* Upload an Image */}
             </Button>
           );
         }}

@@ -6,8 +6,16 @@ import Filter from "../_components/filter";
 import Sorter from "../_components/sorter";
 import { useState } from "react";
 
-const items = [1, 2, 3, 4, 5, 6];
-
+const items = [
+  { id: 1, link: "/", title: "Condo", bg: "/3.jpg" },
+  { id: 2, link: "/", title: "Building", bg: "/2.png" },
+  { id: 3, link: "/", title: "Apartment", bg: "/1.jpg" },
+  { id: 4, link: "/", title: "Flat", bg: "/7.png" },
+  { id: 5, link: "/", title: "Condo", bg: "/3.jpg" },
+  { id: 6, link: "/", title: "Building", bg: "/2.png" },
+  { id: 7, link: "/", title: "Flat", bg: "/5.jpg" },
+  { id: 8, link: "/", title: "Flat", bg: "/7.png" },
+];
 const SearchPage = () => {
   const [value, setValue] = useState("");
   const [type, setType] = useState("");
@@ -34,7 +42,7 @@ const SearchPage = () => {
         {/* <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-4"> */}
         <div className="grid gap-8 gap-y-12 grid-cols-[repeat(auto-fit,minmax(220px,1fr))]">
           {items.map((item, index) => (
-            <Card key={index} />
+            <Card img={item.bg} key={index} />
           ))}
         </div>
         {items.length === 0 && (

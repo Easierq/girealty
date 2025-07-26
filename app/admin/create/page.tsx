@@ -2,13 +2,11 @@ import React from "react";
 import { ListingOrm } from "./components/listing-orm";
 import Container from "@/components/container";
 // import { ListingForm } from "./components/listing-form";
-import FormI from "./components/form";
 
 const Create = () => {
   return (
     <Container>
       <div className="min-h-[100vh] py-[100px]">
-        {/* <FormI /> */}
         <ListingOrm listingData={null} />
       </div>
     </Container>

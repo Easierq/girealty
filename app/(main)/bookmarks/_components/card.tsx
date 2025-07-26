@@ -34,7 +34,7 @@ export const CardB = () => {
           <p className="font-semibold text-[#141718]/90 line-clamp-1">
             400 18th St NW #233, Atlanta, GA 3033
           </p>
-          <p className="font-bold text-[#141718] text-sm line-clamp-1">
+          <p className="font-bold text-[#141718] text-[16px] line-clamp-1">
             {formatPrice(40000)}
           </p>
         </div>

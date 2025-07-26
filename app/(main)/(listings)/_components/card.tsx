@@ -5,7 +5,11 @@ import { Separator } from "@/components/ui/separator";
 import { Bath, Bed, Map } from "lucide-react";
 import Link from "next/link";
 
-export const Card = () => {
+interface Props {
+  img?: string;
+}
+
+export const Card = ({ img }: Props) => {
   return (
     <div className="grid grid-cols-1 gap-2">
       {/* thumbnail */}
@@ -20,7 +24,7 @@ export const Card = () => {
         </div>
         <Link href={`/listings/1`}>
           <img
-            src="/6.jpg"
+            src={img}
             //   src={course.imageUrl as string}
             alt="c-pic"
             className="object-fill h-full w-full min-h-full min-w-full rounded-[8px]"

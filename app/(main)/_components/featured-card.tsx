@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { formatPrice } from "@/lib/format";
+import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 interface Props {
@@ -32,10 +33,10 @@ export const FeaturedCard = ({ label, img }: Props) => {
               </p>
               <Button
                 variant="primary"
-                className="hover:opacity-90 rounded-[10px] w-max px-10 mt-2"
-                asChild
+                className="flex items-center gap-2 bg-slate-900 hover:opacity-90 w-max px-10 mt-2"
               >
                 <Link href={`/listings/1`}>More Details</Link>
+                <ChevronRight className="w-4 h-4" />
               </Button>
             </div>
           </div>
@@ -75,10 +76,10 @@ export const FeaturedCard = ({ label, img }: Props) => {
               </p>
               <Button
                 variant="primary"
-                className="hover:opacity-90 rounded-[10px] w-max px-6 mt-2"
-                asChild
+                className="lex items-center gap-2 bg-slate-900 hover:opacity-90 w-max px-6 mt-2"
               >
                 <Link href={`/listings/1`}>More Details</Link>
+                <ChevronRight className="w-4 h-4" />
               </Button>
             </div>
           </div>

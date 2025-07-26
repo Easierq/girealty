@@ -33,41 +33,48 @@ export default function ImagesSlider() {
     },
     slides: {
       spacing: 0,
-      perView: 1,
+      perView: 0.7,
     },
     mode: "free-snap",
     breakpoints: {
-      "(min-width: 840px)": {
+      "(min-width: 640px)": {
         slides: {
-          perView: 1.3,
+          perView: 1.2,
           spacing: 0,
         },
         mode: "free-snap",
       },
-      "(min-width: 1024px)": {
+      "(min-width: 840px)": {
+        slides: {
+          perView: 1.5,
+          spacing: 0,
+        },
+        mode: "free-snap",
+      },
+      // "(min-width: 1024px)": {
+      //   slides: {
+      //     perView: 2,
+      //     spacing: 0,
+      //   },
+      //   mode: "free-snap",
+      // },
+      "(min-width: 1124px)": {
         slides: {
           perView: 2,
           spacing: 0,
         },
         mode: "free-snap",
       },
-      "(min-width: 1124px)": {
+      "(min-width: 1366px)": {
         slides: {
-          perView: 2.1,
+          perView: 2.2,
           spacing: 0,
         },
         mode: "free-snap",
       },
-      "(min-width: 1280px)": {
+      "(min-width: 1400px)": {
         slides: {
           perView: 2.5,
-          spacing: 0,
-        },
-        mode: "free-snap",
-      },
-      "(min-width: 1440px)": {
-        slides: {
-          perView: 2.7,
           spacing: 0,
         },
         mode: "free-snap",

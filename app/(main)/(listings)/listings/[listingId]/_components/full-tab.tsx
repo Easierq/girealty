@@ -14,7 +14,7 @@ export const FullTab = () => {
           onClick={() => setActiveTab("Key Details")}
           className={`py-2 px-4 text-sm text-gray-600 rounded-md  focus:outline-none ${
             activeTab === "Key Details"
-              ? "bg-gray-300 font-semibold text-gray-700"
+              ? "bg-gray-200 font-semibold text-gray-700"
               : ""
           }`}
         >
@@ -24,14 +24,14 @@ export const FullTab = () => {
           onClick={() => setActiveTab("Description")}
           className={`py-2 px-4 text-sm text-gray-600 rounded-md focus:outline-none ${
             activeTab === "Description"
-              ? "bg-gray-300  font-semibold text-gray-700"
+              ? "bg-gray-200  font-semibold text-gray-700"
               : ""
           }`}
         >
           Description
         </button>
       </div>
-      <div className="text-lg text-gray-700 border border-slate-300 rounded-md">
+      <div className="text-lg text-gray-700 border border-slate-300 rounded-xl">
         {activeTab === "Key Details" ? (
           <div className="p-4 w-full h-full">
             <KeyTab />

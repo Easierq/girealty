@@ -11,7 +11,7 @@ const FooterBig = () => {
           <Link href="/" className="">
             <h1 className="font-zentry text-4xl text-sky-700">REALTY</h1>
           </Link>
-          <p className="mt-4 text-xl md:text-2xl w-[70%] md:w-2/3 font-semibold">
+          <p className="mt-4 text-2xl md:text-2xl w-[70%] md:w-2/3 font-bold">
             Finding home is about making choice, we will help you with that.
             {/* Where every bite is a taste of tradition, and every gathering is a
             chance to make memories. */}

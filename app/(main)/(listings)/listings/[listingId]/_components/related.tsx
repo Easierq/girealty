@@ -14,14 +14,17 @@ import { SliderSkeleton } from "@/app/(main)/_components/latest-skeleton";
 // import { useCardModal } from "@/hooks/use-card-modal";
 // import { Course } from "@prisma/client";
 import { CardSlide } from "@/app/(main)/_components/card";
-import { data } from "@/data";
-import Container from "@/components/container";
 
-// interface Props {
-//   courses: Course[];
-// }
-
-// export default function Latest({ courses }: Props) {
+const data = [
+  { id: 1, link: "/", title: "Condo", bg: "/3.jpg" },
+  { id: 2, link: "/", title: "Building", bg: "/2.png" },
+  { id: 3, link: "/", title: "Apartment", bg: "/1.jpg" },
+  { id: 4, link: "/", title: "Flat", bg: "/7.png" },
+  { id: 5, link: "/", title: "Condo", bg: "/3.jpg" },
+  { id: 6, link: "/", title: "Building", bg: "/2.png" },
+  { id: 7, link: "/", title: "Flat", bg: "/5.jpg" },
+  { id: 8, link: "/", title: "Flat", bg: "/7.png" },
+];
 export default function Related() {
   //   const onOpen = useCardModal((state) => state.onOpen);
 
@@ -171,7 +174,7 @@ export default function Related() {
         <div ref={slideRef} className="keen-slider min-w-full">
           {data.map((property) => (
             <div key={property.id} className="keen-slider__slide">
-              <CardSlide />
+              <CardSlide img={property.bg} />
             </div>
           ))}
         </div>

@@ -38,7 +38,6 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import ImageUpload from "@/components/image-upload";
-// import ImageUpload from "@/components/image-upload";
 
 const steps = [
   {
@@ -329,7 +328,7 @@ export const ListingOrm = ({ listingData }: Props) => {
                   control={form.control}
                   name="images"
                   render={({ field }) => (
-                    <FormItem>
+                    <FormItem className="mb-4">
                       <FormLabel className="text-slate-600">Images</FormLabel>
                       <FormControl>
                         <ImageUpload

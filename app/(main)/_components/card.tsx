@@ -13,7 +13,7 @@ export const CardSlide = ({ img }: { img?: string }) => {
       <div className="group relative aspect-video overflow-hidden bg-[#F3F5F7] rounded-[8px]">
         <div className=" absolute top-2 left-2 right-2 z-10 flex items-start justify-between">
           <div className="w-fit px-3.5 py-1 font-inter text-xs font-semibold uppercase bg-white rounded-full">
-            Free
+            Rent
           </div>
           <button className="shadow-[rgba(15, 15, 15, 0.12)] flex h-8 w-8 items-center justify-center rounded-full bg-white shadow-md transition-opacity duration-100 ease-out group-hover:opacity-100">
             <WishlistIcon className="h-5 w-5" />
@@ -35,7 +35,7 @@ export const CardSlide = ({ img }: { img?: string }) => {
           <p className="font-semibold text-[#141718]/90 text-sm line-clamp-1">
             400 18th St NW #233, Atlanta, GA 3033
           </p>
-          <p className="font-bold text-[#141718] text-sm line-clamp-1">
+          <p className="font-bold text-[#141718] text-[16px] line-clamp-1">
             {formatPrice(40000)}
           </p>
         </div>

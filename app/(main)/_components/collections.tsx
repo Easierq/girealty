@@ -4,10 +4,10 @@ import Link from "next/link";
 import Heading from "./head";
 
 const collections = [
-  { id: 1, link: "/listings/condo", title: "Condo", bg: "/3.jpg" },
-  { id: 2, link: "/listings/building", title: "Building", bg: "/1.jpg" },
-  { id: 3, link: "/listings/apartment", title: "Apartment", bg: "/2.png" },
-  { id: 4, link: "/listings/flat", title: "Flat", bg: "/7.png" },
+  { id: 1, link: "/listings?type=condo", title: "Condo", bg: "/3.jpg" },
+  { id: 2, link: "/listings?type=building", title: "Building", bg: "/1.jpg" },
+  { id: 3, link: "/listings?type=apartment", title: "Apartment", bg: "/2.png" },
+  { id: 4, link: "/listings?type=flat", title: "Flat", bg: "/7.png" },
 ];
 
 const Collections = () => {

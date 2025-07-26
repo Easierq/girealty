@@ -1,8 +1,8 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
-const inter = Open_Sans({ subsets: ["latin"] });
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
 
 import { Toaster } from "@/components/ui/toaster";
 import { ModalProvider } from "@/components/providers/modal-provider";

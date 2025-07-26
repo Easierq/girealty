@@ -47,6 +47,17 @@ export const Navbar = () => {
           </h1>
         </Link>
         <div className="flex items-center gap-3 sm:gap-5">
+          <Link href="/listings" className="">
+            <p
+              className={cn(
+                "hidden sm:block text-[14px] font-bold text-white",
+                pathname !== "/" && "text-sky-700",
+                active && "text-sky-700"
+              )}
+            >
+              Listings
+            </p>
+          </Link>
           <Link href="/bookmarks" className="">
             <p
               className={cn(
