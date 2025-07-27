@@ -5,6 +5,9 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -52,11 +55,13 @@ export const MobileToggle = ({ active }: { active: boolean }) => {
         </div>
       </SheetTrigger>
       <SheetContent className="pt-3 text-slate-800 px-0 bg-white border-none">
+        <SheetHeader className="hidden">
+          <SheetTitle>Sidebar</SheetTitle>
+          <SheetDescription>Sidebar menu</SheetDescription>
+        </SheetHeader>
         <div className="py-3 px-4">
           <Link href="/" className="">
-            <h1 className={cn("font-zentry text-4xl text-slate-800")}>
-              REALTY
-            </h1>
+            <h1 className={cn("font-zentry text-4xl text-sky-700")}>REALTY</h1>
           </Link>
           <div className="flex flex-col mt-8 text-slate-700 text-sm w-[90%]">
             <span>

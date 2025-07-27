@@ -9,13 +9,14 @@
 // import { motion } from "framer-motion";
 import Container from "@/components/container";
 import Search from "./search";
-import Image from "next/image";
+// import Image from "next/image";
 
 export const Hero = () => {
   return (
     <div
       // id="video-frame"
-      className="relative z-10 h-[70dvh] max-h-[70dvh] md:h-[80dvh] md:max-h-[80dvh] w-full overflow-hidden bg-sky-800 pt-16 md:pt-32"
+      style={{ backgroundImage: "url(/bg.jpg" }}
+      className="relative z-10 h-[70dvh] md:h-[80dvh] bg-cover w-full overflow-hidden bg-sky-800 pt-16 md:pt-32"
     >
       {/* <video
         autoPlay
@@ -25,7 +26,7 @@ export const Hero = () => {
         id="current-video"
         className="absolute -z-10 top-0 left-0 w-full h-full object-cover object-center"
       /> */}
-      <Image
+      {/* <Image
         src="/bg.jpg"
         alt="bg"
         layout="fill"
@@ -33,7 +34,7 @@ export const Hero = () => {
         quality={100}
         priority
         className="-z-10"
-      />
+      /> */}
       <div className="absolute inset-0 bg-black bg-opacity-40 -z-10"></div>
       <Container className="h-full">
         <div className="w-full h-full text-white">
