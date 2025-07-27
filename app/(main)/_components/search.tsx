@@ -45,7 +45,7 @@ const Search = () => {
       <div className="w-[150px]">
         <Selecter
           newStyle="border border-gray-400 rounded-[10px]"
-          placeholder="Type"
+          placeholder="Rent"
           onChange={setType}
           title="Type"
           value={type}

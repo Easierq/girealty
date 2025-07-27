@@ -16,7 +16,7 @@ export const Hero = () => {
     <div
       // id="video-frame"
       style={{ backgroundImage: "url(/bg.jpg" }}
-      className="relative z-10 h-[70dvh] md:h-[80dvh] bg-cover w-full overflow-hidden bg-sky-800 pt-16 md:pt-32"
+      className="relative z-10 h-[60vh] md:h-[70vh] bg-cover w-full overflow-hidden bg-sky-800 pt-16 md:pt-32"
     >
       {/* <video
         autoPlay
@@ -38,13 +38,13 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-black bg-opacity-40 -z-10"></div>
       <Container className="h-full">
         <div className="w-full h-full text-white">
-          <div className="w-full md:px-0 md:w-[60%] h-full flex flex-col gap-7 pt-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-white text-shadow">
-              Find Your Dream House With Us And Make Unfogettable Memories.
+          <div className="w-full md:px-0 md:w-[70%] h-full pt-16 md:pt-20">
+            <h2 className="text-3xl md:text-4xl mb-2 font-bold text-white text-shadow">
+              Find Your Dream Home With Us.
             </h2>
-            {/* <p className="text-lgtext-xl font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p> */}
+            <p className="text-xl md:text-2xl font-medium mb-6">
+              Discover properties that fit your budget and lifestyle.
+            </p>
             <Search />
           </div>
         </div>
